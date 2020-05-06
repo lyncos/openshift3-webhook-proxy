@@ -16,7 +16,7 @@ generic_url = 'https://%(cluster)s/oapi/v1/namespaces/%(project)s/buildconfigs/%
 @app.route('/travis-ci/<cluster>/<project>/<application>', methods=['POST'])
 def webhook_travis_ci(cluster, project, application):
     # debug = os.environ.get('DEBUG', '').lower() in ('1', 'true')
-    debug = '1'
+    debug = 1
 
     authorization = request.headers['Authorization']
 
