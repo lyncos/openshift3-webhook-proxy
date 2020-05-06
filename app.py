@@ -21,7 +21,8 @@ def webhook_travis_ci(cluster, project, application):
     authorization = request.headers['Authorization']
 
     fields = json.loads(request.form['payload'])
-
+    print(request.headers)
+    print(request.form)
     if debug:
         print('inbound-headers:', request.headers, file=sys.stderr)
         print('inbound-authorization:', authorization, file=sys.stderr)
