@@ -1,3 +1,4 @@
 Flask
 requests
+flatten_dicts
 Werkzeug==0.16.0
